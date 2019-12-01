@@ -2,9 +2,9 @@
 MarineTraffic.NET
 ====================
 
-**Unofficial .NET library for [MarineTraffic.com](https://www.marinetraffic.com/)'s [API](https://www.marinetraffic.com/en/ais-api-services). **
+__Unofficial .NET library for [MarineTraffic.com](https://www.marinetraffic.com/)'s [API](https://www.marinetraffic.com/en/ais-api-services). __
 
-**Project status: experimental. **
+__Project status: experimental. __
 
 License: *not yet decided*
 
@@ -17,9 +17,9 @@ Usage
 - Create a client object and keep it across calls.  
   `var client = new MarineTrafficApiClient("your-api-key");`
 - Create a request for you needs  
-  `var request = new ExportVesselsV8Request();`
+  `var request = new ExportVesselsV8Request(); ...`
 - Execute the request to get the result  
-  `var result = request.Execute(cllient);`
+  `var result = request.Execute(client);`
 - Always check for errors  
   `if (result.Succeed) { ... } else { /* display result.Errors */ }`
 
