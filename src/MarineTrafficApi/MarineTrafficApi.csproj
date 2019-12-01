@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>SandRock</Authors>
+    <Company />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/sandrock/MarineTraffic.NET</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/sandrock/MarineTraffic.NET/master/res/logo-200.png</PackageIconUrl>
+    <PackageTags>marinetraffic api-client</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
