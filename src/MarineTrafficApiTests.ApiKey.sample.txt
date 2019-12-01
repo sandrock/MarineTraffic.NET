@@ -1,0 +1,1 @@
+put you API key in a file named "MarineTrafficApiTests.ApiKey.txt"
