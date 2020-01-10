@@ -2,18 +2,19 @@
 MarineTraffic.NET
 ====================
 
-__Unofficial .NET library for [MarineTraffic.com](https://www.marinetraffic.com/)'s [API](https://www.marinetraffic.com/en/ais-api-services). __
+**Unofficial .NET library for [MarineTraffic.com](https://www.marinetraffic.com/)'s [API](https://www.marinetraffic.com/en/ais-api-services). **
 
-__Project status: experimental. __
+**Project status: experimental. **
 
 License: *not yet decided*
+
+Nuget: [MarineTrafficApi](https://www.nuget.org/packages/MarineTrafficApi/)
 
 
 Usage
 ------------------------------
 
-- Add a nuget reference to:  
-  *Nuget not yet available*
+- Add a nuget reference to:  `MarineTrafficApi`
 - Create a client object and keep it across calls.  
   `var client = new MarineTrafficApiClient("your-api-key");`
 - Create a request for you needs  
