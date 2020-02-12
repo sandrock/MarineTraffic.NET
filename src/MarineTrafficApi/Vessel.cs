@@ -53,6 +53,11 @@ namespace MarineTrafficApi
         /// <summary>
         /// Basic Info. The AIS Navigational Status of the subject vessel as input by the vessel's crew. There might be discrepancies with the vessel's detail page when vessel speed is near zero (0) knots.
         /// </summary>
+        public string StatusValue { get; set; }
+
+        /// <summary>
+        /// Basic Info. The AIS Navigational Status of the subject vessel as input by the vessel's crew. There might be discrepancies with the vessel's detail page when vessel speed is near zero (0) knots.
+        /// </summary>
         public VesselStatus? Status { get; set; }
 
         /// <summary>
@@ -63,6 +68,9 @@ namespace MarineTrafficApi
         /// <summary>
         /// Basic Info. Data Source - Defines whether the transmitted AIS data was received by a Terrestrial or a Satellite AIS Station.
         /// </summary>
+        /// <remarks>
+        /// Observed values: "TER".
+        /// </remarks>
         public string DSRC { get; internal set; }
 
         /// <summary>
@@ -138,11 +146,17 @@ namespace MarineTrafficApi
         /// <summary>
         /// Extended info. The Type of the subject vessel.
         /// </summary>
+        /// <example>
+        /// "Offshore Supply Ship", "Cargo", "LPG Tanker", "General Cargo", "OffShore Structure", "Oil/Chemical Tanker", "Tug", "Anchor Handling Vessel", "Bulk Carrier", "Container Ship", "Landing Craft", "Pilot Ship", "Crude Oil Tanker"
+        /// </example>
         public string TypeName { get; internal set; }
 
         /// <summary>
         /// Extended info. Further explanation of the SHIPTYPE ID.
         /// </summary>
+        /// <example>
+        /// "Special Craft", "Cargo", "Tanker", "Tug"
+        /// </example>
         public string AisTypeSummary { get; internal set; }
 
         /// <summary>

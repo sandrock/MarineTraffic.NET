@@ -15,13 +15,17 @@ namespace MarineTrafficApi
         Unknown = -1,
 
         /// <summary>
-        /// See the ShipCategory property instead.
+        /// This object is a ship. See the ShipCategory property instead.
         /// </summary>
         ShipCategory = 0,
 
         NavigationAid = 100,
         ReferencePoint = 101,
         Racon = 102,
+
+        /// <example>
+        /// MMSI:994701096 is a "Starboard Hand Mark" with Activity:AidToNavigation.
+        /// </example>
         OffShoreStructure = 103,
         Spare = 104,
         LightWithoutSectors = 105,
@@ -49,6 +53,13 @@ namespace MarineTrafficApi
         PreferredChannelStarboardHand = 127,
         IsolatedDanger = 128,
         SafeWater = 129,
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <example>
+        /// MMSI:2275345
+        /// </example>
         MannedVTS = 130,
         LightVessel = 131,
     }

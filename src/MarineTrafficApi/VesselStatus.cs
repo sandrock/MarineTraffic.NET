@@ -112,6 +112,9 @@ namespace MarineTrafficApi
         /// <summary>
         /// 98 = Aid to Navigation
         /// </summary>
+        /// <example>
+        /// MMSI:994701096 is a "Starboard Hand Mark" with Activity:AidToNavigation.
+        /// </example>
         AidToNavigation = 98,
 
         /// <summary>

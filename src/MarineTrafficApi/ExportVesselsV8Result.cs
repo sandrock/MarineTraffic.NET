@@ -28,7 +28,11 @@ namespace MarineTrafficApi
             table.AddColumn(c++, "SPEED", x => x.Target.Speed = Utility.ParseFloatValue(x));
             table.AddColumn(c++, "HEADING", x => x.Target.Heading = Utility.ParseIntegerValue(x));
             table.AddColumn(c++, "COURSE", x => x.Target.Course = Utility.ParseDegrees(x));
-            table.AddColumn(c++, "STATUS", x => x.Target.Status = Utility.ParseVesselStatus(x)); // 0, 5
+            table.AddColumn(c++, "STATUS", x =>
+                {
+                    x.Target.StatusValue = x.Value;
+                    x.Target.Status = Utility.ParseVesselStatus(x);
+                }); // 0, 5
             table.AddColumn(c++, "TIMESTAMP", x => x.Target.Timestamp = Utility.ParseTimestampValue(x)); // 2017-05-19T09:39:57
             table.AddColumn(c++, "DSRC", x => x.Target.DSRC = Utility.ParseDSRC(x)); // "TER"
             table.AddColumn(c++, "UTC_SECONDS", x => x.Target.UtcSeconds = Utility.ParseIntegerValue(x)); // 54, 28
