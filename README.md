@@ -4,11 +4,13 @@ MarineTraffic.NET
 
 **Unofficial .NET library for [MarineTraffic.com](https://www.marinetraffic.com/)'s [API](https://www.marinetraffic.com/en/ais-api-services). **
 
-**Project status: experimental. **
+**Project status: beta. **
 
 License: *not yet decided*
 
 Nuget: [MarineTrafficApi](https://www.nuget.org/packages/MarineTrafficApi/)
+
+Open to contributions! Are you using MT already? What would you like to see in this library? Do you have some codes that may be added here? Feel free to open an issue.
 
 
 Usage
@@ -23,6 +25,38 @@ Usage
   `var result = request.Execute(client);`
 - Always check for errors  
   `if (result.Succeed) { ... } else { /* display result.Errors */ }`
+
+
+To do list
+------------------------------
+
+[API use cases](https://www.marinetraffic.com/en/ais-api-services/documentation):
+
+- [ ] PS01: Vessel Historical Track
+- [ ] PS02: Vessel Positions of a Static  Fleet
+- [ ] PS03: Vessel Positions of a Dynamic Fleet
+- [ ] PS04: Vessel Positions within a Port
+- [ ] PS05: Vessel Positions in a Predefined Area
+- [x] PS06: Vessel Positions in a Custom     Area
+- [ ] PS07: Single Vessel Positions
+- [ ] EV01: Port Calls
+- [ ] EV02: Vessel Events
+- [ ] EV03: Berth Calls
+- [ ] VD01: Vessel Photos
+- [ ] VD02: Vessel Particulars
+- [ ] VD03: Search Vessel
+- [ ] VI01: Voyage Forecasts
+- [ ] VI02: Expected Arrivals
+- [ ] VI03: Port Distances and Routes
+- [ ] VI04: Predictive Destinations
+- [ ] VI05: Predictive Arrivals
+- [ ] VI06: Port Congestion
+- [ ] VI07: ETA to Port
+- [ ] PU01: Change Fleet
+- [ ] PU02: Vessels in a Fleet
+- [ ] PU03: Fleets
+- [ ] PU04: Credits Balance
+- [ ] PU05: Clear Fleet
 
 
 Frequently asked questions
@@ -44,6 +78,6 @@ Something is missing in this library, can I contribute? Yes. Here are the main s
 
 Why use the CSV export format? 
 
-- CSV is the most lightweight format available. It works real well for objects without an important structure tree. 
+- CSV is the most lightweight format available. It works real well for objects without a structure tree. 
 
 
