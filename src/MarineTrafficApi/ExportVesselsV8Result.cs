@@ -52,7 +52,7 @@ namespace MarineTrafficApi
 
             // full response
             table.AddColumn(c++, "CURRENT_PORT", x => x.Target.CurrentPort = x.Value);
-            table.AddColumn(c++, "LAST_PORT", x => x.Target.LastPort = x.Value);
+            table.AddColumn(c++, "LAST_PORT", x => x.Target.LastPortName = x.Value);
             table.AddColumn(c++, "LAST_PORT_TIME", x => x.Target.LastPortTime = Utility.ParseTimestamp(x));
             table.AddColumn(c++, "CURRENT_PORT_ID", x => x.Target.CurrentPortId = Utility.ParseInteger(x));
             table.AddColumn(c++, "CURRENT_PORT_UNLOCODE", x => x.Target.CurrentPortUnlocode = x.Value);
